@@ -63,8 +63,9 @@ const handler = (async() => {
         
 //Initialising the port 
 
-app.listen( process.env.PORT, () => log(`server listening at port ${process.env.PORT}`));
-    
+        const port = process.env.PORT || 8080;
+        app.listen( port, () => log(`server listening at port ${port}`));
+
     } catch (err) {
         console.error(err)
     }
