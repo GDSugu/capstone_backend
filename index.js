@@ -24,8 +24,8 @@ const app = express();
 config();
 
 const corsOptions ={
-    //origin:'https://bespoke-narwhal-833b97.netlify.app',
-    origin:'*',
+    origin:'https://bespoke-narwhal-833b97.netlify.app',
+    //origin:'*',
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
