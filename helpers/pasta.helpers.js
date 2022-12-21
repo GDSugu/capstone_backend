@@ -3,7 +3,7 @@ const db = require("../shared/mongo");
 
 module.exports = {
     findAll(){
-        return db.pasta.find().toArray();
+        return db.pasta.find().limt(20).toArray();
     },
 
     findById(_id){
