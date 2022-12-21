@@ -63,7 +63,7 @@ const handler = (async() => {
         
 //Initialising the port 
 
-        //const port = process.env.PORT || 8080;
+        const port = process.env.PORT || 8080;
         app.listen( port, () => log(`server listening at port ${port}`));
 
     } catch (err) {
