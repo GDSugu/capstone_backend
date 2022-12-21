@@ -4,7 +4,7 @@ const db = require("../shared/mongo");
 module.exports = {
 
     findAll(){
-        return db.pizza.find({active:true}).toArray();
+        return db.pizza.find({active:true})..limt(20).toArray();
     },
 
 
