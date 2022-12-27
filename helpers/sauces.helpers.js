@@ -3,7 +3,7 @@ const db = require("../shared/mongo");
 
 module.exports = {
     findAll(){
-        return db.sauces.find().limt(20).toArray();
+        return db.sauces.find().toArray();
     },
 
 
