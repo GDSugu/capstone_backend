@@ -23,13 +23,17 @@ const saladsRoutes = require("./routes/salads.routes");
 const app = express();
 config();
 
-const corsOptions ={
-    origin:'https://sprightly-sprite-2c7c3d.netlify.app/',
-    //origin:'*',
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
-app.use(cors(corsOptions));
+// const corsOptions ={
+//     origin:'https://sprightly-sprite-2c7c3d.netlify.app/',
+//     //origin:'*',
+//     credentials:true,            //access-control-allow-credentials:true
+//     optionSuccessStatus:200
+// }
+// app.use(cors(corsOptions));
+
+//Allow CORS
+app.use(cors());
+
 
 const handler = (async() => {
     try {
